@@ -1,3 +1,7 @@
+body{
+    overflow-y:scroll;
+}
+
 
 
 #container_sm{
@@ -360,6 +364,21 @@
       margin-left: 30%;
       margin-top: 20px;
   }
+
+  .error_name{
+      margin-left: 35px;
+  }
+
+  .error_email{
+    margin-left: 35px;
+  }
+
+  .error_pass{
+    margin-left: 35px;
+  }
+  .error{
+    margin-left: 35px;
+  }
   
   
   /*  media queries */
@@ -373,7 +392,7 @@
             width: 100%;
             height: 620px;
             margin: auto;
-            margin-top: -8px;
+            margin-top: 20px;
         }
        
         #scrollbar_sm{
@@ -832,4 +851,3 @@
       to {transform: scale(1)}
     }
   
-    

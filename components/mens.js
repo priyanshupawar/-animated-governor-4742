@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <script src="https://kit.fontawesome.com/c2edd81e34.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="signup.css">
-</head>
-<body id="bg">
+const mensdata=()=>{
 
 
-  <!--navbar-->
-
-  <div id="content"> 
-  <div id="heading">
+    return `<div id="heading">
     <h5>
       Exclusive student offer | 10% off orders over $200
       <a href="">Shop Now</a>
@@ -230,6 +217,42 @@
         <p style="font-weight: 100;">Contact our global Customer Service team</p>
     </div>
 </div>
+<div id="page_signup">
+<h1>SIGN UP AND GET 15% OFF</h1>
+
+<p class="page_signup_p">Sign up for promotions, tailored new arrivals, stock updates and more – straight to your inbox</p>
+
+<label class="container_radio">
+    <input type="radio" class="radio" checked="checked" name="radio">
+    Womenswear
+  </label>
+  <label class="container_radio">
+    <input type="radio" checked="checked" name="radio" class="radio">
+    Menswear
+  </label>
+
+  <p class="page_signup_p2">GET UPDATES BY</p>
+
+  <label class="container_checkbox">
+    <input type="checkbox" class="checkbox_input">
+    Email
+
+  </label>
+
+  <input type="email" class="mainpage_input2" placeholder="Your email address">
+
+  <label class="container_checkbox">
+    <input type="checkbox" class="checkbox_input">
+   SMS
+
+  </label>
+
+  <button id="main_signup">Sign up</button>
+
+  <p class="main_signup_foot">By signing up, you agree to our Privacy Policy. Unsubscribe anytime at the bottom of our emails.</p>
+
+</div>
+
 <div id="footer">
     <div>
         <h5>FARFETCH APP</h5>
@@ -264,6 +287,7 @@
         <h5>Privacy policy</h5>
         <h5>Accessibility</h5>
     </div>
+
     <div>
         <h5>ABOUT FARFETCH</h5>
         <h5>About Us</h5>
@@ -284,115 +308,8 @@
     
     <h6>© Copyright 2022 FARFETCH UK Limited. All rights reserved.</h6>
 </div>
-
-</div> 
-    <!--Login Page-->
-
-
-    <div id="container_sm" class="modal animate">
-           <div class="cont_top_sm">
-                    <div class="cont_top2_sm">
-                        
-                            <h2 id="cont_comeon_sm">Come on in
-                            <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" id="cross_sm" onclick="hideform()">    
-                            </h2>
-                    </div>
-             <!--upper part2 start-->
-             <div id="container_top_content_sm">
-               
-                <button class="container_top_main_signup_sm" type="button" onclick="SI()">SIGN IN</button>
-                <button class="container_top_main_login_sm" type="button" onclick="SU()">I'M NEW HERE</button>
-             </div>
-           </div>
-         <!--login page upper part done-->
-     
-        <div id="scrollbar_sm">
-          <form id="signup_form_sm"  >
-            <div class="input-control">
-                 <label class="input_text_sm">Name</label>
-                 <input type="text" class="input_sm" id="username"> 
-                 <div class="error_name"></div> 
-                 <label class="input_text_sm">Email address</label>
-                 <input type="email" class="input_sm" id="email"> 
-                 <div class="error_email"></div>
-                 <label class="input_text_sm">Password</label>
-                 <input type="password" class="input_sm" id="password"> 
-                 <div class="error_pass"></div>
-                </div>
-                 <p class="policy_sm">By registering, you agree with our <u>Terms & Conditions </u>and <u>Privacy and Cookie Policy.</u></p>
-               
-                 <!-- <label>
-                  <input type="checkbox" checked="checked" name="remember"> <p class="policy2_sm">
-                    
-                    Sign up for early Sale access plus tailored new arrivals, trends and promotions. <u>Find out more</u>. To opt out, click unsubscribe in our emails.
-                    </p>
-                </label> -->
-                
-              <label class="checkbox_sm">
-                <input class="checkbox_input_sm" type="checkbox" required>
-                <div class="checkbox_box_sm"></div>
-                <p class="policy2_sm">
-                    
-                    Sign up for early Sale access plus tailored new arrivals, trends and promotions. <u>Find out more</u>. To opt out, click unsubscribe in our emails.
-                    </p>
-              </label>
-               
-             
-
-                <button type="submit" id="signup_btn_sm" >Register</button>
-               <p id="OR_sm">OR</p>
-
-               <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504739.png" class="socail_img_sm"/><p class="socail_text_sm">Continue With Google</p></button>
-               <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/0/747.png" class="socail_img_sm"/><p class="socail_text_sm2">Continue With Apple</p></button>
-               <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" class="socail_img_sm"/><p class="socail_text_sm2">Continue With Facebook</p></button>
-         </form> 
-         <form id="signin_form_sm">
-             
-            <label class="input_text_sm2">Email address</label>
-            <input type="email" class="input_sm2" id="log_email"> 
-            <label class="input_text_sm2">Password</label>
-            <input type="password" class="input_sm2" id="log_pass">
-            <div class="error"></div>
-            
-          
-           
-         <label class="checkbox_sm2">
-           <input class="checkbox_input_sm2" type="checkbox">
-           <div class="checkbox_box_sm2"></div>
-           <p class="policy2_sm2">
-               
-              Keep me signed in.<u>What's this?</u>
-               </p>
-         </label>
-          
-         <p class="forget_sm2"><u>Forgot your password?</u></p>
-        
-
-           <button type="button" id="signin_btn_sm" >Sign In</button>
-          <p id="OR_sm2">OR</p>
-
-          <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504739.png" class="socail_img_sm"/><p class="socail_text_sm">Continue With Google</p></button>
-          <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/0/747.png" class="socail_img_sm"/><p class="socail_text_sm2">Continue With Apple</p></button>
-          <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" class="socail_img_sm"/><p class="socail_text_sm2">Continue With Facebook</p></button>
-         
-      
-          <button id="transfertosignup_sm">New to FARFETCH? Register.</button>
-        
-    </form>
-        
-        </div>
-        
-    </div>
+`
+}
 
 
-    <!--Login page end-->
-
-
-
-
-</body>
-</html>
-
-
-<script  src="signup.js"></script>
-
+export {mensdata}
