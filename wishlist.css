@@ -1,0 +1,17 @@
+* {
+  font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+}
+#heading-PP {
+  text-align: center;
+}
+#conatiner-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#conatiner-product img {
+  width: 100%;
+}
