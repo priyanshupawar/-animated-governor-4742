@@ -33,7 +33,7 @@ const display = (dataLS) => {
       btn1.addEventListener("click", () => {
         addToCart(ele);
       });
-      div.append(img, type, name, price, btn);
+      div.append(img, type, name, price, btn1);
       container.append(div);
     });
   }
