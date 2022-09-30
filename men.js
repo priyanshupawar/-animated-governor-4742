@@ -17,6 +17,9 @@ function Women() {
 function Men() {
   document.location.href = "men.html";
 }
+function Kids() {
+  document.location.href = "kids.html";
+}
 
 function search() {
   let x = document.getElementById("search").value;
