@@ -1,0 +1,996 @@
+
+* {
+    margin: 0;
+  }
+  #navbar_RJ1 {
+    display: flex;
+    height: 50px;
+    border: 0px solid red;
+    background-color: #ffffff;
+    margin-top: -138px;
+    position: fixed;
+    padding: 5px;
+  }
+
+  #cat {
+    flex: 2;
+    background-color: #ffffff;
+    border: 0px solid rgb(47, 27, 27);
+    font-family: sans-serif;
+    font-size: 16.5px;
+    width: 40px;
+    margin-left: 100px;
+    padding-top: 0px;
+  }
+  #heade {
+    flex: 3;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  #btn {
+    flex: 2;
+    display: flex;
+    background-color: #ffffff;
+    border: 0px solid white;
+    margin-right: -60px;
+    margin-top: -15px;
+  }
+  #btn > button {
+    width: 20%;
+    background-color: #ffffff;
+    border: 0px solid white;
+    color: #000;
+  }
+  #btn > button > img {
+    width: 70%;
+    background-color: #ffffff;
+  }
+  #cat > span {
+    padding: 10px;
+  }
+  #heade {
+    text-align: center;
+
+    margin-top: 0px;
+    margin-right: 80px;
+  }
+
+  #btn > button:nth-child(1) {
+    margin-right: -25px;
+  }
+  #btn > button:nth-child(2) {
+    margin-right: -25px;
+  }
+  #btn > button:nth-child(3) {
+    margin-right: -25px;
+  }
+  #btn > button:nth-child(1) {
+    margin-left: -30px;
+  }
+  #heade > img {
+    width: 40%;
+    margin-right: 50px;
+  }
+  #navbar_RJ2 {
+    display: flex;
+
+    position: fixed;
+
+    width: 86%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 5px;
+    margin-left: 100px;
+    margin-top: -88px;
+    background-color: #ffffff;
+  }
+  #search_RJ > input {
+    padding: 9px;
+    width: 250px;
+  }
+  #divide {
+    margin-top: 15px;
+  }
+  #divide > span {
+    font-family: sans-serif;
+    margin-right: 17px;
+  }
+  #search_RJ {
+    margin-top: 15px;
+  }
+  #first_box {
+    display: flex;
+    background-color: #ffffff;
+    width: 83%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 175px;
+  }
+  #para {
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 200px;
+    margin-left: 50px;
+  }
+  #para > h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+  }
+  #para > p {
+    font-size: 23px;
+  }
+  #para > button {
+    padding: 13px;
+    width: 130px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-top: 35px;
+    font-weight: bold;
+    color: #000;
+  }
+  #image_RJ {
+    background-color: #ffffff;
+  }
+  #secondbox {
+    display: flex;
+    background-color: #ffffff;
+    width: 83%;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  #image_RJ2 > img {
+    width: 77%;
+    margin-left: 180px;
+  }
+  #para > h2 {
+    font-family: sans-serif;
+    font-size: 35px;
+    width: 400px;
+    margin-top: 120px;
+  }
+  #para > p {
+    margin-top: 40px;
+    font-family: sans-serif;
+    color: rgb(30, 30, 34);
+  }
+  #para > h2 {
+    padding-left: -80px;
+  }
+  #new {
+    border: 0px solid red;
+    width: 30%;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 28px;
+    color: rgb(37, 35, 35);
+    margin-top: 70px;
+    margin-left: 650px;
+  }
+  #image_RJ > img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  #image_RJ2 > img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+  #body3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+  position: static;
+    margin-left: 150px;
+    gap: 30px;
+  }
+  #body3 > div {
+    width: 400px;
+  }
+  #body3 > div > img {
+    width: 100%;
+  }
+  #body3 > div > p {
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .container {
+    position: relative;
+    width: 50%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008cba;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+  }
+
+  .container:hover .overlay {
+    width: 100%;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  #body4 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 110px;
+  }
+  #body4 > div > p {
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  #body4 > div > img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+  #body5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 0px solid black;
+    width: 85%;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+  #body5 > p {
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  #body5 > button {
+    padding: 10px;
+    width: 120px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-left: 550px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  #body6 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+  #body6 > div {
+    width: 70%;
+  }
+  #body6 > div > img {
+    width: 100%;
+  }
+
+  #arrivals {
+    background-color: rgb(222, 222, 240);
+    text-align: center;
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+
+  #arrivals p {
+    font-family: sans-serif;
+    float: left;
+    display: block;
+    color: #1d1c1c;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 600px;
+  }
+
+  #arrivals p:hover {
+    background-color: #ddd;
+    background-color: rgb(222, 222, 240);
+    text-align: center;
+  }
+  #navbar_RJ1 {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+
+  #navbar_RJ1 div {
+    float: left;
+    display: block;
+    color: #605959;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #navbar div:hover {
+    background-color: #ffffff;
+    /* color: black; */
+  }
+
+  #navbar div.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  #body6 div div p:nth-child(1) {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: grey;
+  }
+  #body6 div div p:nth-child(2) {
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  #body6 div div p:nth-child(3) {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #1d1c1c;
+  }
+  #body6 div div p:nth-child(4) {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #1d1c1c;
+    margin-top: 20px;
+  }
+  .trim {
+    margin-top: 55px;
+  }
+  #body6 > div > img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  }
+  #body7 {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  #body7 > div {
+    width: 95%;
+    margin-left: 130px;
+  }
+  #body7 > div > img {
+    width: 100%;
+  }
+  #body7 > div > p {
+    font-family: sans-serif;
+    margin-top: 20px;
+  }
+  #body8 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    gap: 30px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+  #body8 > div {
+    width: 98%;
+    border: 0.5px solid rgb(106, 104, 104);
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+  #body8 > div > img {
+    padding: 20px;
+    width: 10%;
+  }
+  #body8 > div > p {
+    margin-top: 20px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+  }
+  #body8 > div:hover {
+    background-color: #e0ebed;
+  }
+  .sidenav {
+    width: 60px;
+    position: fixed;
+    z-index: 0;
+    top: 10px;
+    left: 10px;
+    background: rgb(255, 252, 252);
+    overflow-x: hidden;
+    padding: 0px 0;
+    margin-top: 170px;
+  }
+
+  .sidenav img {
+    height: 100px;
+    display: block;
+  }
+
+  .sidenav img:hover {
+    color: #064579;
+  }
+
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav img {
+      font-size: 18px;
+    }
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: #04aa6d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+  }
+
+  @-webkit-keyframes animatezoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+
+  @keyframes animatezoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  #think {
+    font-family: sans-serif;
+    font-size: 30px;
+  }
+  input[type=text], input[type=password] {
+width: 950px;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+width: 950px;
+}
+
+/* Set a style for all buttons */
+#sign_RJ {
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+margin:10px 0px 0px 700px;
+margin-bottom: 100px;
+
+} 
+
+
+button:hover {
+opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+padding: 14px 20px;
+background-color: #f44336;
+width: 950px;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+float: left;
+width: 950px;
+}
+
+/* Add padding to container elements */
+.container {
+padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: #474e5d;
+padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 35px;
+top: 15px;
+font-size: 40px;
+font-weight: bold;
+color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+color: #f44336;
+cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+ width: 100%;
+}
+}
+#form_RJ{
+width:1000px;
+/* margin-left: 400px; */
+}
+
+
+
+
+
+
+#footer{
+    width: 100%;
+    height: 400px;
+    background-color: #222222;
+    color: aliceblue;
+    display: flex;
+    margin: auto;
+    
+}
+#footer div{
+   line-height: 30px;
+   margin: auto;
+}
+#footer div:nth-child(1){
+    margin-top: 5px;
+}
+#footer div:nth-child(2){
+    margin-top: 5px;
+}
+#footer div:nth-child(3){
+    margin-top: 5px;
+}
+#footer div:nth-child(4){
+    margin-top: 5px;
+}
+#footer h5{
+    font-weight: 100;
+    font-size: 16px;
+}
+#footer h5:hover{
+    cursor: pointer;
+}
+#footer i:hover{
+    cursor: pointer;
+}
+#footer img{
+    width: 18px;
+    height: 18px;
+    border-radius: 30px;
+}
+#footer i{
+    margin-left: 30px;
+    font-size: 22px;
+}
+#footer2{
+    height: 50px;
+    background-color: #222222;
+    color: aliceblue;
+    
+    
+    
+}
+#footer2 h6{
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 100px;
+    
+}
+.hidden {
+opacity: 0;
+filter: blur(10px);
+transform: translateX(+100%);
+transition: all 1s;
+}
+.show {
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+}
+@media all and (max-width: 767px){
+*{
+    margin: 0;
+    
+   
+}
+#heading{
+    width: 100%;
+}
+#heading2{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+img{
+    width: 120px;
+}
+#footer{
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: grid;
+}
+}
+
+
+
+
+
+
+#head222{
+    display: flex;
+    width: 60%;
+    
+    margin-left: 200px;
+}
+#head222 input{
+    width: 300px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+#head222 i{
+    font-size: 30px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#page_signup{
+
+    /* border:1px solid red; */
+    width: 30%;
+    height: 500px;
+    margin-left: 31%;
+    margin-top: 30px;
+}
+
+#page_signup h1{
+    /* border:1px solid green; */
+font-family:" Nimbus Sans Extended D", Helvetica, Arial, sans-serif;
+    text-align: center;
+font-size: 30px;
+font-weight: 600;
+width: 350px;
+margin: auto;
+}
+
+.page_signup_p{
+    /* border:1px solid black; */
+    width: 380px;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.container_radio{
+    /* position: absolute; */
+   margin-left: 60px;
+   /* border: 1px solid red; */
+   text-align: center;
+
+   
+}
+
+.page_signup_p2{
+
+    margin-left: 10px;
+}
+.container_checkbox{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+    
+}
+
+.mainpage_input2{
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #727272;
+    margin-left: 35px;
+}
+
+.mainpage_input2::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#main_signup{
+    /* border:1px solid black; */
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 35px;
+    background-color: #222222;
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+.main_signup_foot{
+    /* border: 1px solid grey; */
+    text-align: center;
+    font-size: 16px;
+    width:80%;
+    margin-left: 30px;
+}
+

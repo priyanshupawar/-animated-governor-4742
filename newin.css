@@ -1,0 +1,253 @@
+#NIT_main{
+    height:fit-content;
+    /* border: 1px solid green; */
+    margin-top: 160px;
+  
+}
+
+#NIT_right{
+    /* border: 2px solid red; */
+    height: fit-content;
+    width: 75%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: repeat(5,300px); */
+    gap: 10px;
+    justify-content: space-around;
+    
+}
+
+#NIT_left{
+
+    /* border: 2px solid purple; */
+    width: 22%;
+    height: fit-content;
+    position:fixed;
+}
+#NIT_left_heading{
+    margin-left: 10px;
+   
+}
+.NIT_left_data{
+    margin-left: 10px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+}
+.NIT_left_data_arrow1{
+    width: 20px;
+    margin-left: 120px;
+}
+.NIT_left_data_arrow2{
+    width: 20px;
+    margin-left: 140px;
+}
+.NIT_left_data_arrow3{
+    width: 20px;
+    margin-left: 142px;
+}
+.NIT_left_data_arrow4{
+    width: 20px;
+    margin-left: 144px;
+}
+.NIT_left_data_arrow5{
+    width: 20px;
+    margin-left: 105px;
+}
+
+#NIT_right div{
+    /* border: 1px solid  black; */
+    width: 90%;
+    margin-top: 10px;
+    
+}
+
+#NIT_right div img{
+    width: 100%;
+    height: 350px;
+}
+
+#NIT_right div h5{
+    color: #737484;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+#NIT_right div h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    color: #222222;
+    margin-top: 0px;
+}
+
+#NIT_right div p{
+    color: #222222;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0px;
+}
+
+#NIT_right div #nit_price{
+     font-size: 18px;
+    margin-top: 25px;
+
+}
+#NIT_right div #wishlist_logo{
+    width: 20px;
+    height: 20px;
+    margin-left: 92%;
+}
+
+
+/*------footer---------*/
+
+
+#footer{
+    width: 100%;
+    height: 400px;
+    background-color: #222222;
+    color: aliceblue;
+    display: flex;
+    margin: auto;
+    margin-bottom: 0px;
+    
+}
+#footer div{
+   line-height: 30px;
+   margin: auto;
+}
+#footer div:nth-child(1){
+    margin-top: 5px;
+}
+#footer div:nth-child(2){
+    margin-top: 5px;
+}
+#footer div:nth-child(3){
+    margin-top: 5px;
+}
+#footer div:nth-child(4){
+    margin-top: 5px;
+}
+#footer h5{
+    font-weight: 100;
+    font-size: 16px;
+}
+#footer h5:hover{
+    cursor: pointer;
+}
+#footer i:hover{
+    cursor: pointer;
+}
+#footer img{
+    width: 18px;
+    height: 18px;
+    border-radius: 30px;
+}
+#footer i{
+    margin-left: 30px;
+    font-size: 22px;
+}
+#footer2{
+    height: 50px;
+    background-color: #222222;
+    color: aliceblue;
+    
+    
+    
+}
+#footer2 h6{
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 100px;
+    
+}
+
+#page_signup{
+
+    /* border:1px solid red; */
+    width: 30%;
+    height: 500px;
+    margin-left: 31%;
+    margin-top: 30px;
+}
+
+#page_signup h1{
+    /* border:1px solid green; */
+font-family:" Nimbus Sans Extended D", Helvetica, Arial, sans-serif;
+    text-align: center;
+font-size: 30px;
+font-weight: 600;
+width: 350px;
+margin: auto;
+}
+
+.page_signup_p{
+    /* border:1px solid black; */
+    width: 380px;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.container_radio{
+    /* position: absolute; */
+   margin-left: 60px;
+   /* border: 1px solid red; */
+   text-align: center;
+
+   
+}
+
+.page_signup_p2{
+
+    margin-left: 10px;
+}
+.container_checkbox{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+    
+}
+
+.mainpage_input2{
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #727272;
+    margin-left: 35px;
+}
+
+.mainpage_input2::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#main_signup{
+    /* border:1px solid black; */
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 35px;
+    background-color: #222222;
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+.main_signup_foot{
+    /* border: 1px solid grey; */
+    text-align: center;
+    font-size: 16px;
+    width:80%;
+    margin-left: 30px;
+}

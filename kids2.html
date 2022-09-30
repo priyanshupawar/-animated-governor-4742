@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids Page</title>
+    <link rel="stylesheet" href="./kids2.css">
+    <style>
+      
+    </style>
+    
+  </head>
+  <body>
+    <div id="arrivals" class="header" class="main">
+      <p>Incoming | Shop the latest arrivals here</p>
+    </div>
+    <div id="navbar_RJ1">
+      <div id="cat">
+        <span onclick="Women()">Women</span>
+        <span onclick="Men()">Men</span>
+        <span onclick="Kid()">Kids</span>
+      </div>
+      <div id="heade">
+        <img
+          src="data:image/png;base64,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"
+        />
+      </div>
+      <div id="btn">
+        <button>
+          <img
+            src="https://www.nicepng.com/png/detail/163-1633622_india-flag-flag-of-india.png"
+          />
+        </button>
+
+        <button>
+          <img
+            src="https://cdn.codespeedy.com/wp-content/uploads/2018/12/avatar1.png"
+          />
+        </button>
+        <button>
+          <img
+            src="https://www.freepnglogos.com/uploads/heart-clipart-black-and-white/black-and-white-heart-clip-art-2.jpg"
+          />
+        </button>
+        <button>
+          <img
+            src="https://thumbs.dreamstime.com/b/bag-cart-ecommerce-online-shopping-icon-nice-162376869.jpg"
+          />
+        </button>
+      </div>
+    </div>
+    <div id="navbar_RJ2">
+      <div id="divide">
+        <span>New In</span>
+        <span>Brands</span>
+        <span>Baby (0-36mth)</span>
+        <span>Kids (2-12 yrs)</span>
+        <span>Teen (13-16 yrs)</span>
+        <span>Sale</span>
+      </div>
+      <div id="search_RJ">
+        <!-- <input type="text" id="search" placeholder="Search" /> -->
+        <input id="search"  type="text" placeholder="search"><span><i onclick="search()" class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+    </div>
+
+    <div id="first_box" class="content">
+      <div id="para">
+        <h1>COOL KICKS</h1>
+        <p>
+          Explore our sneaker edit, courtesy of the world's<br />
+          biggest names
+        </p>
+        <button>Shop Now</button>
+      </div>
+      <div id="image_RJ">
+        <img
+          src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3919496/data/702f696c9082c8d9046e96647aeec54c/1x1_messaging-side/637/data.jpeg"
+        />
+      </div>
+    </div>
+
+    <div id="first_box" class="content">
+      <div id="para">
+        <h2>NEW FALL FAVORITES</h2>
+        <p><a>Shop Chloe Kids</a></p>
+      </div>
+      <div id="image_RJ2">
+        <img
+          src="https://c.bannerflow.net/accounts/farfetch/5885fca2b801c913d4b04244/images/bf872fe5-c80e-4a1f-b5fd-03d51e3543d3.jpg"
+        />
+      </div>
+    </div>
+
+    <div id="new" class="content">The best of new in</div>
+
+    <div id="body3" class="content">
+      <div id="child1" class="container">
+        <img
+          src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3919572/data/2efb5487d9d6edce3721eb9573f2a4cd/1x1_three-columns/480/data.jpeg"
+        />
+        <p>BABY</p>
+        <p>Mini pieces with big personality</p>
+        <div class="overlay">
+          <img
+            class="text"
+            src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3965638/data/f643fcbe064f1784f86cfeba03fad19a/1x1_three-columns/480/data.jpeg"
+          />
+        </div>
+      </div>
+      <div id="child2" class="container">
+        <img
+          src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3919718/data/7921bc1a3a61665c7c65d71db6b4e832/1x1_three-columns/480/data.jpeg"
+        />
+        <p>KIDS</p>
+        <p>White-hot styles in small sizes</p>
+        <div class="overlay">
+          <img
+            class="text"
+            src="https://cdn-images.farfetch-contents.com/19/04/17/40/19041740_41650250_480.jpg"
+          />
+        </div>
+      </div>
+      <div id="child3" class="container">
+        <img
+          src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3919382/data/ff4425306214fd47741bc57057d3f985/1x1_three-columns/480/data.jpeg"
+        />
+        <p>TEENS</p>
+        <p>Closet essentials for the season ahead</p>
+        <div class="overlay">
+          <img
+            class="text"
+            src="https://cdn-images.farfetch-contents.com/18/49/18/15/18491815_40231489_480.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="body4" class="content">
+      <div>
+        <img
+          src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3965648/data/5b86ebffdb6e11dbb7217d93039bdccf/1x1_two-columns/637/data.jpeg"
+        />
+        <p>NEW KICKS</p>
+        <p>Explore our sneaker edit, courtesy of fashion’s biggest names</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3965758/data/467ff31f68b8e8c2e761ee2c52358788/1x1_two-columns/637/data.jpeg"
+        />
+        <p>CONSCIOUS FASHION</p>
+        <p>Little clothes made with the bigger picture in mind</p>
+      </div>
+    </div>
+
+    <div class="sidenav">
+      <img
+        src="https://d6tizftlrpuof.cloudfront.net/themes/production/farfetch-button-e6e66b297986d9df25712286b26b46f7.png"
+        onclick="document.getElementById('id01').style.display='block'"
+        style="width: auto" 
+      />
+    </div>
+    <div id="id01" class="modal">
+      <form
+        class="modal-content animate"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+          <p id="think">Tell us what you think</p>
+        </div>
+
+        <div class="container">
+          <label for="uname"
+            ><b
+              >How was your experience with the FARFETCH website today?</b
+            ></label
+          >
+
+          <img
+            src="https://media.istockphoto.com/vectors/feedback-emoticon-smile-set-of-5-emoji-vector-id1167599607?k=20&m=1167599607&s=170667a&w=0&h=2U9ex73Rpx6eAG2gMQOwL-Bsg7jN2TJZ-hohVRVHDk0="
+            class="avatar"
+          />
+        </div>
+      </form>
+    </div>
+
+    <div id="body5" class="content">
+      <p>Trending now: 150 most-wanted pieces</p>
+      <button>Shop Now</button>
+    </div>
+
+    <div id="kids_data"></div>
+    <!-- <div id="body6" class="content">
+        <div>
+          <img
+            src="https://cdn-images.farfetch-contents.com/18/72/86/47/18728647_41547004_600.jpg"
+          />
+          <div class="trim">
+            <p>New Season</p>
+            <p>Moncler Enfant</p>
+            <p>Careil belted puffer jacket</p>
+            <p>$980</p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn-images.farfetch-contents.com/17/91/15/33/17911533_41672630_600.jpg"
+          />
+          <div class="trim">
+            <p>New Season</p>
+            <p>Chloe Kids</p>
+            <p>faux-fur trimmed waistcoat</p>
+            <p>$337</p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn-images.farfetch-contents.com/18/78/27/73/18782773_40826178_600.jpg"
+          />
+          <div class="trim">
+            <p>New Season</p>
+            <p>Gucci Kids</p>
+            <p>emboridered-logo polo dress</p>
+            <p>$693</p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn-images.farfetch-contents.com/18/87/25/33/18872533_40924217_600.jpg"
+          />
+          <div class="trim">
+            <p>New Season</p>
+            <p>Jordan Kids</p>
+            <p>x Travis Scott Jordan 1 Low Sneakers</p>
+            <p>$596</p>
+          </div>
+        </div>
+      </div> -->
+
+    <div id="body7">
+      <div>
+        <img
+          src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3965740/data/6ee964c35a7d4526d278bf7089f2bebc/1x1_two-columns/637/data.jpeg"
+        />
+        <p>GIVENCHY KIDS</p>
+        <p>Reenergized closet staples for fall</p>
+      </div>
+      <div>
+        <img
+          src="https://c.bannerflow.net/accounts/farfetch/5885fca2b801c913d4b04244/images/ed2c6b95-6ed3-41ff-9d73-7c27266be017.jpg"
+        />
+      </div>
+    </div>
+
+    <div id="body8">
+      <div>
+        <img
+          src="https://t3.ftcdn.net/jpg/00/87/33/08/360_F_87330801_fcYwupfjzBldFMTFBLMH1aHOS87SidJD.jpg"
+        />
+        <p>HOW TO SHOP</p>
+        <p>Your guide to shopping and placing orders</p>
+      </div>
+      <div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1024px-Icon-round-Question_mark.svg.png"
+        />
+        <p>FAQS</p>
+        <p>Your questions answered</p>
+      </div>
+      <div>
+        <img
+          src="data:image/png;base64,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"
+        />
+        <p>NEED HELP ?</p>
+        <p>Contact Our Global Customer Service team</p>
+      </div>
+    </div>
+    
+
+
+    
+
+    
+      
+    </div>
+
+
+
+    <div id="footer">
+      <div>
+          <h5>FARFETCH APP</h5>
+          <br>
+          <h5>Farfetch App for iSO and Android</h5>
+      </div>
+      <div>
+          <h5>DESTINATION/REGION,CURRENCY AND LANGUAGE</h5>
+          <br>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaHLBMYM7yiiAz2vF3FL3SocnzTaQ0whVLWMdBsAkhAwEhSJdYfm0wGfz1-c2Nkef6TW8&usqp=CAU" alt=""><span style="margin-left: 7px;">India, USD $</span>
+          <br>
+          <br>
+          <h5>FOLLOW US</h5>
+          <br>
+          <a href="https://www.instagram.com/farfetch/"><i style="color:white;" class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/farfetch.asiapac/?brand_redir=88573992939"><i style="color:white;" class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/farfetch"><i style="color:white;" class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.snapchat.com/add/farfetch.com"><i style="color:white;" class="fa-brands fa-snapchat"></i></a>
+          <a href="https://www.pinterest.com/farfetch/"><i style="color:white;" class="fa-brands fa-pinterest"></i></a>
+          <a href="https://www.youtube.com/user/farfetchdotcom"><i style="color:white;" class="fa-brands fa-youtube"></i></a>
+          
+      </div>
+      <div>
+          <h5>CUSTOMER SERVICE</h5>
+          <h5>Contact us</h5>
+          <h5>Orders & delivery</h5>
+          <h5>Payment & pricing</h5>
+          <h5>Returns & refunds</h5>
+          <h5>FAQs</h5>
+          <h5>Terms & conditions</h5>
+          <h5> promotion terms & conditions</h5>
+          <h5>Privacy policy</h5>
+          <h5>Accessibility</h5>
+      </div>
+      <div>
+          <h5>ABOUT FARFETCH</h5>
+          <h5>About Us</h5>
+          <h5>Investors</h5>
+          <h5>Boutique Partners</h5>
+          <h5>Affiliate Programme</h5>
+          <h5>Student discount UNiDAYS</h5>
+          <h5>Youth discount</h5>
+          <h5>Carrers</h5>
+          <h5>Customer Promise</h5>
+          <h5>FARFETCH App</h5>
+          <h5>Sitemap</h5>
+          <h5>Positively FARFETCH</h5>
+      </div>
+  </div>
+  <div id="footer2">
+      <h6>'FARFETCH' and the 'FARFETCH' logo are trade marks of FARFETCH UK Limited and are registered in numerous jurisdictions around the world.</h6>
+      
+      <h6>© Copyright 2022 FARFETCH UK Limited. All rights reserved.</h6>
+  </div>
+  </body>
+</html>
+
+<script src="./kids2.js"></script>

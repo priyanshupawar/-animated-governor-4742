@@ -235,6 +235,7 @@ let flag=false;
      
          if(ele.email==selected && ele.pass==selected1){
           success.innerHTML=ele.name;
+          
      flag=true;
      }
      
@@ -259,3 +260,8 @@ let flag=false;
 
    
  }
+
+
+//  function success(){
+//   event.preventDefault();
+//  }
