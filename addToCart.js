@@ -1,39 +1,59 @@
-// let cartdataLS = JSON.parse(localStorage.getItem("Add_to_cart"));
+let cartdataLS = JSON.parse(localStorage.getItem("Add_to_cart"));
 // console.log(cartdataLS);
-let cartdataLS = [
-  {
-    image:
-      "https://cdn-images.farfetch-contents.com/18/65/82/33/18658233_41822991_170.jpg",
-    type: "Valentino",
-    name: "One Stud-embellished short-sleeve T-shirt",
-    price: 1032,
-    size: "S",
-    quantity: 2,
-  },
-];
+// let cartdataLS = [
+//   {
+//     image:
+//       "https://cdn-images.farfetch-contents.com/18/65/82/33/18658233_41822991_170.jpg",
+//     type: "Valentino",
+//     name: "One Stud-embellished short-sleeve T-shirt",
+//     price: 1032,
+//     size: "S",
+//     quantity: 2,
+//   },
+//   {
+//     image:
+//       "https://cdn-images.farfetch-contents.com/18/65/82/33/18658233_41822991_170.jpg",
+//     type: "Valentino",
+//     name: "One Stud-embellished short-sleeve T-shirt",
+//     price: 1032,
+//     size: "S",
+//     quantity: 2,
+//   },
+//   {
+//     image:
+//       "https://cdn-images.farfetch-contents.com/18/65/82/33/18658233_41822991_170.jpg",
+//     type: "Valentino",
+//     name: "One Stud-embellished short-sleeve T-shirt",
+//     price: 1032,
+//     size: "S",
+//     quantity: 2,
+//   },
+// ];
 let totalPriceProduct;
 
 const display = (cartdataLS) => {
   if (cartdataLS === null) {
-    let container = document.getElementById("nothind-pp");
-    container.innerHTML = null;
-    let new_container = document.getElementById("main-container-pp");
-    new_container.innerHTML = null;
-    let p = document.createElement("p");
-    p.innerText = "There's nothing in your bag, yet...";
-    let btn = document.createElement("button");
-    btn.innerText = "Shop Women";
+    // let container = document.getElementById("nothind-pp");
+    // container.innerHTML = null;
+    let container_total = document.getElementById("cart-page-box");
+    container_total.innerHTML = null;
 
-    container.append(p, btn);
+    let line_hr = document.getElementById("line-cart");
+    line_hr.style.display = "none";
   } else {
-    let container1 = document.getElementById("container-car-1");
-
     cartdataLS.forEach(function (ele, index) {
-      let container_image = document.getElementById("conatiner-cart-img");
-      let container_price = document.getElementById("conatiner-cart-price");
-      let container_name = document.getElementById("conatiner-cart-name");
-      let container_size = document.getElementById("conatiner-cart-size");
-      let container_btn = document.getElementById("conatiner-cart-btn");
+      let cartProductContainer = document.getElementById("container-cart");
+      let main_container = document.createElement("div");
+      let container_image = document.createElement("div");
+      container_image.setAttribute("id", "conatiner-cart-img");
+      let container_price = document.createElement("div");
+      container_price.setAttribute("id", "conatiner-cart-price");
+      let container_name = document.createElement("div");
+      container_name.setAttribute("id", "conatiner-cart-name");
+      let container_size = document.createElement("div");
+      container_size.setAttribute("id", "conatiner-cart-size");
+      let container_btn = document.createElement("div");
+      container_btn.setAttribute("id", "conatiner-cart-btn");
 
       let img = document.createElement("img");
       img.src = ele.image;
@@ -60,6 +80,14 @@ const display = (cartdataLS) => {
       container_price.append(price, price_syntax);
       container_size.append(size, quantity);
       container_btn.append(btn1);
+      main_container.append(
+        container_image,
+        container_name,
+        container_price,
+        container_size,
+        container_btn
+      );
+      cartProductContainer.append(main_container);
     });
   }
 };
