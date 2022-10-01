@@ -1,0 +1,78 @@
+* {
+  font-family: sans-serif;
+}
+
+#ppmain {
+  width: 100%;
+}
+
+#ppleft {
+  width: 70%;
+}
+
+#ppleftup {
+  margin-top: 100px;
+}
+
+#ppleftup ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#pphr {
+  margin-top: 40px;
+  width: 65%;
+}
+
+#ppleftdown {
+  margin-left: 70px;
+  margin-top: 70px;
+  width: 70%;
+  padding: 10px;
+}
+
+#ppform {
+  margin-top: 20px;
+}
+
+#ppform input[type="text"] {
+  width: 46%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(130, 130, 130);
+}
+
+.ppp {
+  margin-left: 377px;
+}
+
+.ppp1 {
+  margin-bottom: -35px;
+  margin-left: 4px;
+}
+
+#ppinput1 input[type="text"] {
+  width: 96%;
+  margin-bottom: 7px;
+}
+
+#ppinput1 select {
+  width: 99%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+#ppckeckbox {
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+}
+
+#ppright {
+  width: 28%;
+  padding: 10px;
+  float: right;
+  height: auto;
+  margin: auto;
+}
