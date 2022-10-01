@@ -8,9 +8,9 @@ const navbar = () => {
     </div>
       <div id="head1">
           <div id="head11">
-          <h4 onclick="Women()">Women</h4>
-          <h4 onclick="Men()">Men</h4>
-          <h4 onclick="Kid()">Kids</h4>
+          <h4 onclick="women()">Women</h4>
+          <h4 onclick="men()">Men</h4>
+          <h4 onclick="kids()">Kids</h4>
           </div>
           <div id="head111">
               <h1>FARFETCH</h1>
@@ -31,7 +31,7 @@ const navbar = () => {
                         <div class="mmitemsRP">
                             <p>WHAT'S NEW </p>
                             <ul>
-                              <li>New in today</li>
+                              <li onclick="newin()">New in today</li>
                                 <li> New: modern femininity</li>
                                 <li>New: classic</li>
                                 <li> New: expressionist</li>
@@ -531,7 +531,7 @@ const navbar = () => {
             </ul>
         </div>
         <div id="rightnavRP">
-            </i> <input type="search" class="nosubmit" placeholder="Search ">
+            </i> <input type="search" class="nosubmit" placeholder="Search" id="search">
             
   
         </div>

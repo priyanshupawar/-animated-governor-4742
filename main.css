@@ -1,0 +1,265 @@
+
+
+#content{
+    /* border: 2px solid green; */
+    height: fit-content;
+}
+
+
+
+#content h1{
+    margin-top: 200px;
+    /* border: 1px solid red; */
+    text-align: center;
+    font-weight: 300;
+}
+
+#shop_all{
+    /* border: 1px solid orange; */
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 15px;
+    position: relative;
+}
+
+.shop_wear{
+    /* border: 1px solid black; */
+    width: 30%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.shop_wear img{
+    width: 100%;
+}
+
+#ft{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 250px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#feature{
+    /* border: 2px solid grey; */
+    width: 45% ;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#trend{
+    /* border: 2px solid orange; */
+    width:45% ;
+    font-size: 20px;
+    font-weight: 500;
+}
+#feature p{
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 18px;
+}
+#trend p{
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#t_1{
+    margin-left: 80%;
+}
+#t_2{
+    margin-left: 76%;
+}
+#t_3{
+    margin-left: 82%;
+}
+#f_1{
+    margin-left: 80%;
+}
+#f_2{
+    margin-left: 76%;
+}
+#f_3{
+    margin-left: 82%;
+}
+#body8{
+    display: flex;
+    
+    width: 80%;
+    height: 190px;
+    
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#body8 div{
+    padding-left: 20px;
+    margin: auto;
+    width: 30%;
+    height: 150px;
+    border: 1px solid #dbdbdb ;
+    
+    
+}
+#page_signup{
+    
+    /* border:1px solid red; */
+    width: 30%;
+    height: 500px;
+    margin-left: 31%;
+    margin-top: 30px;
+}
+
+#page_signup h1{
+    /* border:1px solid green; */
+font-family:" Nimbus Sans Extended D", Helvetica, Arial, sans-serif;
+    text-align: center;
+font-size: 30px;
+font-weight: 600;
+width: 350px;
+margin: auto;
+border: none;
+}
+
+.page_signup_p{
+    /* border:1px solid black; */
+    width: 380px;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.container_radio{
+    /* position: absolute; */
+   margin-left: 60px;
+   /* border: 1px solid red; */
+   text-align: center;
+
+   
+}
+
+.page_signup_p2{
+
+    margin-left: 10px;
+}
+.container_checkbox{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+    
+}
+
+.mainpage_input2{
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #727272;
+    margin-left: 35px;
+}
+
+.mainpage_input2::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#main_signup{
+    /* border:1px solid black; */
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 35px;
+    background-color: #222222;
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+.main_signup_foot{
+    /* border: 1px solid grey; */
+    text-align: center;
+    font-size: 16px;
+    width:80%;
+    margin-left: 30px;
+}
+
+#search{
+    background-color: white;
+    border: 1px solid black;
+}
+#footer{
+    width: 100%;
+    height: 400px;
+    background-color: #222222;
+    color: aliceblue;
+    display: flex;
+    margin: auto;
+    
+}
+#footer div{
+   line-height: 30px;
+   margin: auto;
+}
+#footer div:nth-child(1){
+    margin-top: 5px;
+}
+#footer div:nth-child(2){
+    margin-top: 5px;
+}
+#footer div:nth-child(3){
+    margin-top: 5px;
+}
+#footer div:nth-child(4){
+    margin-top: 5px;
+}
+#footer h5{
+    font-weight: 100;
+    font-size: 16px;
+}
+#footer h5:hover{
+    cursor: pointer;
+}
+#footer i:hover{
+    cursor: pointer;
+}
+#footer img{
+    width: 18px;
+    height: 18px;
+    border-radius: 30px;
+}
+#footer i{
+    margin-left: 30px;
+    font-size: 22px;
+}
+#footer2{
+    height: 50px;
+    background-color: #222222;
+    color: aliceblue;
+    
+    
+    
+}
+#footer2 h6{
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 100px;
+    
+}
+.hidden {
+opacity: 0;
+filter: blur(10px);
+transform: translateX(+100%);
+transition: all 1s;
+}
+.show {
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+}

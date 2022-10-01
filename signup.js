@@ -22,7 +22,7 @@ let success=document.getElementById("login_details")
 
 var main_container=document.getElementById("container_sm");
 
- SI=()=>{
+ window.SI=()=>{
     x.style.display="none"
     y.style.display="block"
     b.style.textDecoration="none"
@@ -31,7 +31,7 @@ var main_container=document.getElementById("container_sm");
 
 
 
-SU=()=>{
+window.SU=()=>{
     x.style.display="block"
     y.style.display="none"
     a.style.textDecoration="none"
@@ -56,7 +56,7 @@ var nav_head2=document.getElementById('heading2')
 var search_input=document.getElementById('search')
 var body=document.getElementById('content')
 
-function changebg(){
+window.changebg=()=>{
 
   changebag.style.display='block';
   // body.style.background="rgba(0, 0, 0, 0.10)";
@@ -72,7 +72,7 @@ function changebg(){
 }
 
 
- hideform=()=>{
+ window.hideform=()=>{
 
     main_container.style.display="none";
     body.style.background="none"
@@ -132,7 +132,7 @@ document.getElementById("signup_btn_sm").addEventListener("click",signup)
 
 let dataArr=JSON.parse(localStorage.getItem("signup"))||[];
 
- function signup(){
+ window.signup=()=>{
    event.preventDefault();
    let name=document.getElementById('username').value;
    let email=document.getElementById("email").value;
@@ -225,7 +225,7 @@ document.getElementById("signin_btn_sm").addEventListener("click",loginit)
 //    console.log(logindata)
 let flag=false;
 
- function loginit(){
+window.loginit=()=>{
      event.preventDefault();
  
    let selected=  document.querySelector("#log_email").value;

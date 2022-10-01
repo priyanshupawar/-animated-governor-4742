@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
   }
@@ -10,6 +9,7 @@
     margin-top: -138px;
     position: fixed;
     padding: 5px;
+    z-index: 2;
   }
 
   #cat {
@@ -85,6 +85,7 @@
     margin-left: 100px;
     margin-top: -88px;
     background-color: #ffffff;
+    z-index: 2;
   }
   #search_RJ > input {
     padding: 9px;
@@ -221,7 +222,7 @@
     width: 50%;
     margin: auto;
     margin-top: 60px;
-  position: static;
+
     margin-left: 150px;
     gap: 30px;
   }
@@ -375,6 +376,7 @@
     width: 100%;
     display: block;
     transition: top 0.3s;
+    z-index: 2;
   }
 
   #arrivals p {
@@ -455,6 +457,7 @@
   }
   .trim {
     margin-top: 55px;
+    margin-bottom: 70px;
   }
   #body6 > div > img:hover {
     -ms-transform: scale(1.5); /* IE 9 */
@@ -909,88 +912,227 @@ img{
     margin-top: 5px;
 }
 
-#page_signup{
+.trim>p>img{
+    width:8%;
+    margin-left: 60%;
+}
 
-    /* border:1px solid red; */
-    width: 30%;
-    height: 500px;
-    margin-left: 31%;
-    margin-top: 30px;
+
+
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+#sign_RJ {
+  background-color: #86c1ab;
+  color: rgb(33, 30, 30);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+  margin-left: 700px;
+}
+#sign_RJ:hover{
+  background-color: #f44336;
+  font-size: 20px;
+}
+
+button:hover {
+  opacity:1;
+  
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+#page_signup{
+    
+  /* border:1px solid red; */
+  width: 30%;
+  height: 500px;
+  margin-left: 31%;
+  margin-top: 30px;
+  display: none;
 }
 
 #page_signup h1{
-    /* border:1px solid green; */
+  /* border:1px solid green; */
 font-family:" Nimbus Sans Extended D", Helvetica, Arial, sans-serif;
-    text-align: center;
+  text-align: center;
 font-size: 30px;
 font-weight: 600;
 width: 350px;
 margin: auto;
+border: none;
 }
 
 .page_signup_p{
-    /* border:1px solid black; */
-    width: 380px;
-    font-size: 18px;
-    text-align: center;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 20px;
+  /* border:1px solid black; */
+  width: 380px;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .container_radio{
-    /* position: absolute; */
-   margin-left: 60px;
-   /* border: 1px solid red; */
-   text-align: center;
+  /* position: absolute; */
+ margin-left: 60px;
+ /* border: 1px solid red; */
+ text-align: center;
 
-   
+ 
 }
 
 .page_signup_p2{
 
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .container_checkbox{
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    margin-top: 15px;
-    
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+  
 }
 
 .mainpage_input2{
-    width: 80%;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid #727272;
-    margin-left: 35px;
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #727272;
+  margin-left: 35px;
 }
 
 .mainpage_input2::placeholder{
-    padding-left: 10px;
-    font-size: 15px;
+  padding-left: 10px;
+  font-size: 15px;
 }
 
 #main_signup{
-    /* border:1px solid black; */
-    width: 80%;
-    height: 35px;
-    border-radius: 5px;
-    margin-left: 35px;
-    background-color: #222222;
-    font-size: 15px;
-    color: white;
-    margin-top: 10px;
+  /* border:1px solid black; */
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  margin-left: 35px;
+  background-color: #222222;
+  font-size: 15px;
+  color: white;
+  margin-top: 10px;
 }
 
 .main_signup_foot{
-    /* border: 1px solid grey; */
-    text-align: center;
-    font-size: 16px;
-    width:80%;
-    margin-left: 30px;
+  /* border: 1px solid grey; */
+  text-align: center;
+  font-size: 16px;
+  width:80%;
+  margin-left: 30px;
 }
+
+#search{
+  background-color: white;
+  border: 1px solid black;
+}
+
+
+
+
 

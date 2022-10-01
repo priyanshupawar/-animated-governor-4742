@@ -17,6 +17,21 @@ window.newin=()=>{
   document.location.href="newin.html"
 }
 
+window.women=()=>{
+  document.location.href="womens2.html"
+}
+
+window.men=()=>{
+    document.location.href="mens2.html"
+}
+
+window.kids=()=>{
+    document.location.href="kids2.html"
+}
+
+window.newin=()=>{
+  document.location.href="newin.html"
+}
 window.onscroll=function (){
   myfunction();
 }
