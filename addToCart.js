@@ -33,14 +33,13 @@ let totalPriceProduct;
 
 const display = (cartdataLS) => {
   if (cartdataLS === null) {
-    // let container = document.getElementById("nothind-pp");
-    // container.innerHTML = null;
     let container_total = document.getElementById("cart-page-box");
     container_total.innerHTML = null;
-
     let line_hr = document.getElementById("line-cart");
     line_hr.style.display = "none";
   } else {
+    let container = document.getElementById("nothind-pp");
+    container.innerHTML = null;
     cartdataLS.forEach(function (ele, index) {
       let cartProductContainer = document.getElementById("container-cart");
       let main_container = document.createElement("div");
@@ -101,4 +100,12 @@ const TotalPriceCheckout = (index) => {
   cartdataLS.slice(index, 1);
 };
 
-const finalCheckout = (totalPriceProduct) => {};
+const finalCheckout = (totalPriceProduct) => {
+  let subtotal = document.getElementById("TotalAmount-cart");
+  subtotal.innerText = totalPriceProduct;
+  let deliveryRate = document.getElementById("TotalAmount-cart");
+  deliveryRate.innerText = "$" + 25;
+  let finalamount = document.getElementById("final-amount");
+  finalamount.innerText = +totalPriceProduct + +deliveryRate;
+};
+finalCheckout(totalPriceProduct);

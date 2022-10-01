@@ -15,3 +15,21 @@
 #conatiner-product img {
   width: 100%;
 }
+#conatiner_wishlist_none {
+  margin: auto;
+  width: 25%;
+  text-align: center;
+}
+#conatiner_wishlist_none > button {
+  margin-top: 50px;
+  padding: 7px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  width: 40%;
+  font-size: medium;
+  cursor: pointer;
+}
+#container-wish {
+  text-align: center;
+}
