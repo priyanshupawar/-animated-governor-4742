@@ -42,6 +42,7 @@
           <img
             src="https://www.freepnglogos.com/uploads/heart-clipart-black-and-white/black-and-white-heart-clip-art-2.jpg"
           />
+          <span id="heart_count"></span>
         </button>
         <button>
           <img
@@ -207,7 +208,7 @@
           <p>New Season</p>
           <p>Moncler Enfant</p>
           <p>Careil belted puffer jacket</p>
-          <p>$980</p>
+          <p>$980 <img onclick="heart()"  src="https://www.freepnglogos.com/uploads/heart-clipart-black-and-white/black-and-white-heart-clip-art-2.jpg"/></p>
         </div>
       </div>
       <div>
@@ -218,7 +219,7 @@
           <p>New Season</p>
           <p>Chloe Kids</p>
           <p>faux-fur trimmed waistcoat</p>
-          <p>$337</p>
+          <p>$337 <img onclick="heart()"  src="https://www.freepnglogos.com/uploads/heart-clipart-black-and-white/black-and-white-heart-clip-art-2.jpg"/></p>
         </div>
       </div>
       <div>
@@ -229,7 +230,7 @@
           <p>New Season</p>
           <p>Gucci Kids</p>
           <p>emboridered-logo polo dress</p>
-          <p>$693</p>
+          <p>$693 <img onclick="heart()"  src="https://www.freepnglogos.com/uploads/heart-clipart-black-and-white/black-and-white-heart-clip-art-2.jpg"/></p>
         </div>
       </div>
       <div>
@@ -240,7 +241,7 @@
           <p>New Season</p>
           <p>Jordan Kids</p>
           <p>x Travis Scott Jordan 1 Low Sneakers</p>
-          <p>$596</p>
+          <p>$596 <img onclick="heart()" src="https://www.freepnglogos.com/uploads/heart-clipart-black-and-white/black-and-white-heart-clip-art-2.jpg"/></p>
         </div>
       </div>
     </div>
@@ -254,28 +255,27 @@
         <p>Reenergized closet staples for fall</p>
       </div>
       <div>
-        <img
-          src="https://c.bannerflow.net/accounts/farfetch/5885fca2b801c913d4b04244/images/ed2c6b95-6ed3-41ff-9d73-7c27266be017.jpg"
+        <img src="https://c.bannerflow.net/accounts/farfetch/5885fca2b801c913d4b04244/images/ed2c6b95-6ed3-41ff-9d73-7c27266be017.jpg"
         />
       </div>
     </div>
 
     <div id="body8">
-      <div>
+      <div id="SHOP_RJ">
         <img
           src="https://t3.ftcdn.net/jpg/00/87/33/08/360_F_87330801_fcYwupfjzBldFMTFBLMH1aHOS87SidJD.jpg"
         />
         <p>HOW TO SHOP</p>
         <p>Your guide to shopping and placing orders</p>
       </div>
-      <div>
+      <div id="SHOP_RJ1">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1024px-Icon-round-Question_mark.svg.png"
         />
         <p>FAQS</p>
         <p>Your questions answered</p>
       </div>
-      <div>
+      <div id="SHOP_RJ2">
         <img
           src="data:image/png;base64,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"
         />
@@ -286,11 +286,48 @@
     
 
 
+
+    <div>
+      
+    </div>
+
+
+    <button id="sign_RJ" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
     
 
     
       
-    </div>
+    
 
 
 
