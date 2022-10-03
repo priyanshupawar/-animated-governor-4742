@@ -71,8 +71,8 @@ const display = (cartdataLS) => {
       let btn1 = document.createElement("button");
       btn1.innerText = "Remove product";
       totalPriceProduct = +ele.price;
-      btn1.addEventListener("click", () => {
-        removeProduct(index);
+      btn1.addEventListener("click", function () {
+        removeProduct(ele, index);
       });
       container_image.append(img);
       container_name.append(type, name);
@@ -92,13 +92,17 @@ const display = (cartdataLS) => {
 };
 
 display(cartdataLS);
-const removeProduct = (index) => {
+const removeProduct = (ele, index) => {
+  // event.target.parentNode.remove();
   cartdataLS.slice(index, 1);
+  console.log(cartdataLS);
+  localStorage.setItem("Add_to_cart", JSON.stringify(cartdataLS));
+  // window.location.reload();
 };
 
-const TotalPriceCheckout = (index) => {
-  cartdataLS.slice(index, 1);
-};
+// const TotalPriceCheckout = (index) => {
+//   cartdataLS.slice(index, 1);
+// };
 
 const finalCheckout = (totalPriceProduct) => {
   let subtotal = document.getElementById("TotalAmount-cart");

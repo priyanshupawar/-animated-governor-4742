@@ -9,15 +9,6 @@ let dataLS = JSON.parse(localStorage.getItem("wishlist"));
 //     size: "S",
 //     quantity: 2,
 //   },
-//   {
-//     image:
-//       "https://cdn-images.farfetch-contents.com/18/65/82/33/18658233_41822991_170.jpg",
-//     type: "Valentino",
-//     name: "One Stud-embellished short-sleeve T-shirt",
-//     price: 1032,
-//     size: "S",
-//     quantity: 2,
-//   },
 // ];
 
 const display = (dataLS) => {
@@ -49,13 +40,14 @@ const display = (dataLS) => {
       let name = document.createElement("p");
       name.innerText = ele.name;
       let price = document.createElement("p");
-      price.innerText = ele.price;
+      price.innerText = "$" + ele.price;
+
       let btn1 = document.createElement("button");
       btn1.innerText = "Add to bag";
       btn1.addEventListener("click", () => {
         addToCart(ele);
       });
-      div.append(img, type, name, price, btn1);
+      div.append(img, type, name, price, select, btn1);
       container.append(div);
     });
   }
@@ -63,5 +55,7 @@ const display = (dataLS) => {
 
 display(dataLS);
 const addToCart = (ele) => {
-  localStorage.setItem("Add_to_cart", JSON.stringify(ele));
+  let dataCart = [];
+  dataCart.push(ele);
+  localStorage.setItem("Add_to_cart", JSON.stringify(dataCart));
 };
