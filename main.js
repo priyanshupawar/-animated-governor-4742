@@ -1,7 +1,7 @@
-import {navbar} from "./components/navbar.js"
+// import {navbar} from "./components/navbar.js"
 
-let navbar_div=document.getElementById("navbar")
-navbar_div.innerHTML=navbar();
+// let navbar_div=document.getElementById("navbar")
+// navbar_div.innerHTML=navbar();
 
 
 
@@ -20,4 +20,7 @@ window.kids=()=>{
 
 window.newin=()=>{
   document.location.href="newin.html"
+}
+function wishlist(){
+  document.location.href="wishlist.html"
 }

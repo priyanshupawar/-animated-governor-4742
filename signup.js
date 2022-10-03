@@ -16,6 +16,7 @@ let login_error=document.querySelector(".error")
 let success=document.getElementById("login_details")
 
 
+
 // let checkbox=document.querySelector(".checkbox_input_sm")
 
 /*------------------------------------------------------------*/
@@ -127,8 +128,7 @@ const submit=document.getElementById("signup_btn_sm");
 // submit.disabled=false;
 
 
- 
-document.getElementById("signup_btn_sm").addEventListener("click",signup)
+
 
 let dataArr=JSON.parse(localStorage.getItem("signup"))||[];
 
@@ -220,7 +220,7 @@ if(name!=""&&email!=""&&pass!=""&&pass.length>=6){
 //logiin   -----------------------------------------------
 
 
-document.getElementById("signin_btn_sm").addEventListener("click",loginit)
+// document.getElementById("signin_btn_sm").addEventListener("click",loginit)
 
 //    console.log(logindata)
 let flag=false;

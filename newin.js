@@ -24,6 +24,9 @@ window.women=()=>{
 window.men=()=>{
     document.location.href="mens2.html"
 }
+window.heart=()=>{
+  document.location.href="wishlist.html"
+}
 
 window.kids=()=>{
     document.location.href="kids2.html"
@@ -46,7 +49,7 @@ function myfunction(){
 
 
 
-let wishlistArr=JSON.parse(localStorage.getItem("NIT_items"))||[];
+let wishlistArr=JSON.parse(localStorage.getItem("wishlist"))||[];
 
 let newintodayArr=[
 
@@ -188,7 +191,7 @@ let newintodayArr=[
 
     wishlistArr.push(ele)
 
-    localStorage.setItem("NIT_items",JSON.stringify(wishlistArr))
+    localStorage.setItem("wishlist",JSON.stringify(wishlistArr))
 
 
   }

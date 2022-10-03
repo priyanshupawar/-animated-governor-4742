@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kids Page</title>
     <link rel="stylesheet" href="newkids.css">
-    <link rel="stylesheet" href="signup.css">
+    <!-- <link rel="stylesheet" href="signup.css"> -->
     <style>
       
     </style>
     
   </head>
-  <body>
+  <body id="bg">
     <div id="arrivals" class="header" class="main">
       <p>Incoming | Shop the latest arrivals here</p>
     </div>
@@ -34,12 +34,12 @@
           />
         </button>
 
-        <button>
+        <button onclick="tosignup()">
           <img
             src="https://cdn.codespeedy.com/wp-content/uploads/2018/12/avatar1.png"
           />
         </button>
-        <button>
+        <button onclick="wishlist()">
           <img
             src="https://www.freepnglogos.com/uploads/heart-clipart-black-and-white/black-and-white-heart-clip-art-2.jpg"
           />
@@ -200,7 +200,7 @@
       <button>Shop Now</button>
     </div>
 
-    <div id="body6" class="content">
+    <!-- <div id="body6" class="content">
       <div>
         <img
           src="https://cdn-images.farfetch-contents.com/18/72/86/47/18728647_41547004_600.jpg"
@@ -245,7 +245,11 @@
           <p>$596 <img onclick="heart()" src="https://www.freepnglogos.com/uploads/heart-clipart-black-and-white/black-and-white-heart-clip-art-2.jpg"/></p>
         </div>
       </div>
-    </div>
+    </div> -->
+
+      <div id="body6" class="content"></div>
+
+
 
     <div id="body7">
       <div>
@@ -419,9 +423,103 @@ SMS
       
       <h6>© Copyright 2022 FARFETCH UK Limited. All rights reserved.</h6>
   </div>
+  <div id="container_sm" class="modal animate">
+    <div class="cont_top_sm">
+             <div class="cont_top2_sm">
+                 
+                     <h2 id="cont_comeon_sm">Come on in
+                     <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" id="cross_sm" onclick="hideform()">    
+                     </h2>
+             </div>
+      <!--upper part2 start-->
+      <div id="container_top_content_sm">
+        
+         <button class="container_top_main_signup_sm" type="button" onclick="SI()">SIGN IN</button>
+         <button class="container_top_main_login_sm" type="button" onclick="SU()">I'M NEW HERE</button>
+      </div>
+    </div>
+  <!--login page upper part done-->
+
+ <div id="scrollbar_sm">
+   <form id="signup_form_sm"  >
+     <div class="input-control">
+          <label class="input_text_sm">Name</label>
+          <input type="text" class="input_sm" id="username"> 
+          <div class="error_name"></div> 
+          <label class="input_text_sm">Email address</label>
+          <input type="email" class="input_sm" id="email"> 
+          <div class="error_email"></div>
+          <label class="input_text_sm">Password</label>
+          <input type="password" class="input_sm" id="password"> 
+          <div class="error_pass"></div>
+         </div>
+          <p class="policy_sm">By registering, you agree with our <u>Terms & Conditions </u>and <u>Privacy and Cookie Policy.</u></p>
+        
+          <!-- <label>
+           <input type="checkbox" checked="checked" name="remember"> <p class="policy2_sm">
+             
+             Sign up for early Sale access plus tailored new arrivals, trends and promotions. <u>Find out more</u>. To opt out, click unsubscribe in our emails.
+             </p>
+         </label> -->
+         
+       <label class="checkbox_sm">
+         <input class="checkbox_input_sm" type="checkbox" required>
+         <div class="checkbox_box_sm"></div>
+         <p class="policy2_sm">
+             
+             Sign up for early Sale access plus tailored new arrivals, trends and promotions. <u>Find out more</u>. To opt out, click unsubscribe in our emails.
+             </p>
+       </label>
+        
+      
+
+         <button type="submit" id="signup_btn_sm" onclick="signup()">Register</button>
+        <p id="OR_sm">OR</p>
+
+        <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504739.png" class="socail_img_sm"/><p class="socail_text_sm">Continue With Google</p></button>
+        <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/0/747.png" class="socail_img_sm"/><p class="socail_text_sm2">Continue With Apple</p></button>
+        <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" class="socail_img_sm"/><p class="socail_text_sm2">Continue With Facebook</p></button>
+  </form> 
+  <form id="signin_form_sm">
+      
+     <label class="input_text_sm2">Email address</label>
+     <input type="email" class="input_sm2" id="log_email"> 
+     <label class="input_text_sm2">Password</label>
+     <input type="password" class="input_sm2" id="log_pass">
+     <div class="error"></div>
+     
+   
+    
+  <label class="checkbox_sm2">
+    <input class="checkbox_input_sm2" type="checkbox">
+    <div class="checkbox_box_sm2"></div>
+    <p class="policy2_sm2">
+        
+       Keep me signed in.<u>What's this?</u>
+        </p>
+  </label>
+   
+  <p class="forget_sm2"><u>Forgot your password?</u></p>
+ 
+
+    <button type="button" id="signin_btn_sm" onclick="loginit()" >Sign In</button>
+   <p id="OR_sm2">OR</p>
+
+   <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504739.png" class="socail_img_sm"/><p class="socail_text_sm">Continue With Google</p></button>
+   <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/0/747.png" class="socail_img_sm"/><p class="socail_text_sm2">Continue With Apple</p></button>
+   <button class="social_btn_sm"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" class="socail_img_sm"/><p class="socail_text_sm2">Continue With Facebook</p></button>
+  
+
+   <button id="transfertosignup_sm">New to FARFETCH? Register.</button>
+ 
+</form>
+ 
+ </div>
+ 
+</div>
   </body>
 </html>
 
 <script src="newkids.js"></script>
 
-<!-- <script src="signup.js"></script> -->
+<script src="signup.js"></script>

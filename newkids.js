@@ -90,64 +90,94 @@ function search() {
   });
 
 
-// let wishlist_data=[
-//     {
-//         image:"https://cdn-images.farfetch-contents.com/18/72/86/47/18728647_41547004_600.jpg",
-//         type:"Moncler Enfant",
-//         name:"Careil belted puffer jacket",
-//         price:"$980 "
-//     },
-//     {
-//         image:"https://cdn-images.farfetch-contents.com/17/91/15/33/17911533_41672630_600.jpg",
-//         type:"Chloe Kids",
-//         name:"faux-fur trimmed waistcoat",
-//         price:"$337  "
-//     },
-//     {
-//         image:"https://cdn-images.farfetch-contents.com/18/78/27/73/18782773_40826178_600.jpg",
-//         type:"Gucci Kids",
-//         name:"emboridered-logo polo dress",
-//         price:"$693"
-//     },
-//     {
-//         image:"https://cdn-images.farfetch-contents.com/18/87/25/33/18872533_40924217_600.jpg",
-//         type:"Jordan Kids",
-//         name:"x Travis Scott Jordan 1 Low Sneakers",
-//         price:"$596 "
-//     },
-// ]
-//let wishlist=[]
+let wishlist_data=[
+    {
+        image:"https://cdn-images.farfetch-contents.com/18/72/86/47/18728647_41547004_600.jpg",
+        type:"Moncler Enfant",
+        name:"Careil belted puffer jacket",
+        price:"$980 "
+    },
+    {
+        image:"https://cdn-images.farfetch-contents.com/17/91/15/33/17911533_41672630_600.jpg",
+        type:"Chloe Kids",
+        name:"faux-fur trimmed waistcoat",
+        price:"$337  "
+    },
+    {
+        image:"https://cdn-images.farfetch-contents.com/18/78/27/73/18782773_40826178_600.jpg",
+        type:"Gucci Kids",
+        name:"emboridered-logo polo dress",
+        price:"$693"
+    },
+    {
+        image:"https://cdn-images.farfetch-contents.com/18/87/25/33/18872533_40924217_600.jpg",
+        type:"Jordan Kids",
+        name:"x Travis Scott Jordan 1 Low Sneakers",
+        price:"$596 "
+    },
+]
+let wishlist=JSON.parse(localStorage.getItem("wishlist"))||[];
 
-// const appendData =(wishlist_data)=>{
-//   wishlist_data.map(function (ele,i){
-//     let container = document.getElementById("body6");
-//     container.innerHTML=null;
-//     let div = document.createElement("div");
+const appendData =(wishlist_data)=>{
+  wishlist_data.forEach(function (ele){
+    let container = document.getElementById("body6");
+    // container.innerHTML=null;
+    let div = document.createElement("div");
 
-
-//     let img = document.createElement("img");
-//     img.src = ele.image;
-//     let name = document.createElement("p");
-//     name.innerText = ele.name;
-//     let type = document.createElement("p");
-//     type.innerText = ele.type;
-//     let price = document.createElement("h3");
-//     price.innerText = ele.price;
-//     div.append(img,type,name,price);
-//     container.append(div);
-//     wishlist.push(ele)
-//     localStorage.setItem("wishlist",JSON.stringify(wishlist))
+    let img = document.createElement("img");
+    img.src = ele.image;
+    let name = document.createElement("p");
+    name.innerText = ele.name;
+    let type = document.createElement("p");
+    type.innerText = ele.type;
+    let price = document.createElement("h3");
+    price.innerText = ele.price;
+    div.append(img,type,name,price);
+    container.append(div);
+   
+    div.addEventListener("click",function (){
+      wishlist.push(ele)
+      localStorage.setItem("wishlist",JSON.stringify(wishlist))
+    })
     
-//   })
+  })
 
-// }
-// appendData()
-// 
-// 
-// let nextpage=(ele,i)=>{
-//     wishlist.push(ele)
-//     localStorage.setItem("wishlist",JSON.stringify(wishlist))
-// }
+}
+appendData(wishlist_data)
+
+
+let nextpage=(ele)=>{
+    wishlist.push(ele)
+    localStorage.setItem("wishlist",JSON.stringify(wishlist))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let SHOP_RJ_btn=document.querySelector("#SHOP_RJ")
@@ -202,7 +232,12 @@ window.women=()=>{
   window.kids=()=>{
       document.location.href="kids2.html"
   }
-  
+  window.tosignup=()=>{
+    document.location.href="signup.html"
+  }
+  function wishlist(){
+    document.location.href="wishlist.html"
+  }
 
 
 

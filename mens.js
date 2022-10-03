@@ -10,6 +10,10 @@ const observer = new IntersectionObserver((entries) => {
   });
   const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((el) => observer.observe(el));
+
+  function wishlist(){
+    document.location.href="wishlist.html"
+  }
   
   function Women() {
     document.location.href = "womens2.html";
@@ -44,8 +48,10 @@ const observer = new IntersectionObserver((entries) => {
 
     
 
-let mensArr=JSON.parse(localStorage.getItem("mens_items"))||[];
-let mensArr2=JSON.parse(localStorage.getItem("mens_items2"))||[];
+// let mensArr=JSON.parse(localStorage.getItem("mens_items"))||[];
+// let mensArr2=JSON.parse(localStorage.getItem("mens_items2"))||[];
+let mensArr=[]
+let mensArr2=[]
 
 let mens_data=[
 
@@ -138,9 +144,9 @@ const display=(mens_data)=>{
 
     mensArr.push(ele)
 
-    localStorage.setItem("mens_items",JSON.stringify(mensArr))
-
-
+    localStorage.setItem("wishlist",JSON.stringify(mensArr))
+    
+    
   }
   )
     
@@ -187,9 +193,9 @@ const display2=(mens_data2)=>{
  
      mensArr2.push(ele)
  
-     localStorage.setItem("mens_items2",JSON.stringify(mensArr2))
+     localStorage.setItem("wishlist",JSON.stringify(mensArr2))
  
- 
+   
    }
    )
      
@@ -203,3 +209,4 @@ const display2=(mens_data2)=>{
 }
 
 display2(mens_data2)
+

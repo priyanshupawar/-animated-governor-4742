@@ -103,3 +103,7 @@ function Kids(){
   window.location.href="dummy_kids.html"
 }
 
+
+function newin(){
+  document.location.href="newin.html"
+}
